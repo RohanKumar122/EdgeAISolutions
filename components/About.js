@@ -37,7 +37,7 @@ const missions = [
 export default function About() {
   return (
     <section id="about" className="relative py-28 overflow-hidden">
-      <div className="absolute inset-0 bg-gradient-to-b from-[#050d18] via-[#071020] to-[#050d18]" />
+      <div className="absolute inset-0 bg-gradient-to-b from-slate-50 via-slate-100 to-slate-50 dark:from-[#050d18] dark:via-[#071020] dark:to-[#050d18] transition-colors duration-300" />
       <div className="absolute right-0 top-1/4 w-1/2 h-96 bg-accent-500/5 rounded-full blur-3xl pointer-events-none" />
 
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -67,7 +67,7 @@ export default function About() {
             {/* Mission checkmarks */}
             <div className="grid grid-cols-2 gap-3">
               {missions.map(({ icon: Icon, text }) => (
-                <div key={text} className="flex items-center gap-2.5 text-sm text-slate-300">
+                <div key={text} className="flex items-center gap-2.5 text-sm text-slate-700 dark:text-slate-300">
                   <div className="w-7 h-7 rounded-lg bg-brand-500/15 border border-brand-500/25 flex items-center justify-center flex-shrink-0">
                     <Icon className="w-3.5 h-3.5 text-brand-400" />
                   </div>
@@ -99,8 +99,8 @@ export default function About() {
                     <p.icon className={`w-6 h-6 ${p.color}`} />
                   </div>
                   <div>
-                    <h3 className={`font-display font-bold text-lg text-white mb-2`}>{p.title}</h3>
-                    <p className="text-slate-400 text-sm leading-relaxed">{p.desc}</p>
+                    <h3 className={`font-display font-bold text-lg text-slate-900 dark:text-white mb-2`}>{p.title}</h3>
+                    <p className="text-slate-600 dark:text-slate-400 text-sm leading-relaxed">{p.desc}</p>
                   </div>
                 </div>
               </div>
@@ -111,10 +111,10 @@ export default function About() {
               <div className="absolute top-0 right-0 w-32 h-32 bg-brand-500/10 rounded-full blur-2xl" />
               <div className="relative">
                 <div className="font-mono text-xs text-brand-400 mb-2 tracking-widest">// COMPANY TAGLINE</div>
-                <blockquote className="font-display font-bold text-2xl text-white leading-snug">
+                <blockquote className="font-display font-bold text-2xl text-slate-900 dark:text-white leading-snug">
                   "Private AI. Secure Systems. Edge Intelligence."
                 </blockquote>
-                <div className="mt-3 text-slate-400 text-sm">— Edge AI Local </div>
+                <div className="mt-3 text-slate-600 dark:text-slate-400 text-sm">— Edge AI Local </div>
               </div>
             </div>
           </div>

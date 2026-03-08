@@ -40,7 +40,7 @@ export default function Home() {
           <Technology />
           <Demo />
           <UseCases />
-          {/* <Pricing /> */}
+          <Pricing />
           <Testimonials />
           <Contact />
         </main>

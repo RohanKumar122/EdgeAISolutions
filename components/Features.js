@@ -70,7 +70,7 @@ const features = [
 export default function Features() {
   return (
     <section id="features" className="relative py-28 overflow-hidden">
-      <div className="absolute inset-0 bg-gradient-to-b from-[#071525] to-[#050d18]" />
+      <div className="absolute inset-0 bg-gradient-to-b from-slate-100 to-slate-50 dark:from-[#071525] dark:to-[#050d18] transition-colors duration-300" />
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-brand-500/5 rounded-full blur-3xl pointer-events-none" />
 
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -100,8 +100,8 @@ export default function Features() {
               <div className={`w-11 h-11 ${f.bg} border ${f.border} rounded-xl flex items-center justify-center mb-4 group-hover:scale-110 transition-transform`}>
                 <f.icon className={`w-5 h-5 ${f.color}`} />
               </div>
-              <h3 className="font-display font-semibold text-base text-white mb-2">{f.title}</h3>
-              <p className="text-slate-400 text-xs leading-relaxed">{f.desc}</p>
+              <h3 className="font-display font-semibold text-base text-slate-900 dark:text-white mb-2">{f.title}</h3>
+              <p className="text-slate-600 dark:text-slate-400 text-xs leading-relaxed">{f.desc}</p>
             </div>
           ))}
         </div>
@@ -110,7 +110,7 @@ export default function Features() {
         <div className="mt-16 glass neon-border rounded-2xl overflow-hidden">
           <div className="grid md:grid-cols-2">
             {/* Cloud AI side */}
-            <div className="p-8 border-b md:border-b-0 md:border-r border-white/10">
+            <div className="p-8 border-b md:border-b-0 md:border-r border-slate-200 dark:border-white/10">
               <div className="flex items-center gap-2 mb-5">
                 <div className="w-3 h-3 bg-red-400 rounded-full" />
                 <span className="font-mono text-sm text-red-400">Cloud AI</span>
@@ -124,7 +124,7 @@ export default function Features() {
                   'Latency: 200ms–2s',
                   'Vendor lock-in',
                 ].map((item) => (
-                  <li key={item} className="flex items-center gap-2.5 text-sm text-slate-400">
+                  <li key={item} className="flex items-center gap-2.5 text-sm text-slate-600 dark:text-slate-400">
                     <span className="text-red-400 text-xs">✕</span>
                     {item}
                   </li>
@@ -147,7 +147,7 @@ export default function Features() {
                   'Latency: < 25ms',
                   'Fully open & customizable',
                 ].map((item) => (
-                  <li key={item} className="flex items-center gap-2.5 text-sm text-slate-300">
+                  <li key={item} className="flex items-center gap-2.5 text-sm text-slate-700 dark:text-slate-300">
                     <span className="text-brand-400 text-xs">✓</span>
                     {item}
                   </li>

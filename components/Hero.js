@@ -173,8 +173,8 @@ export default function Hero() {
                 </div>
 
                 {/* Fake camera feed */}
-                <div className="relative bg-surface-dark rounded-xl overflow-hidden mb-5 aspect-video">
-                  <div className="absolute inset-0 bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 flex items-center justify-center">
+                <div className="relative bg-slate-100 dark:bg-surface-dark rounded-xl overflow-hidden mb-5 aspect-video">
+                  <div className="absolute inset-0 bg-gradient-to-br from-slate-200 via-slate-100 to-slate-200 dark:from-slate-900 dark:via-slate-800 dark:to-slate-900 flex items-center justify-center">
                     {/* Grid overlay */}
                     <div className="absolute inset-0 grid grid-cols-6 grid-rows-4 opacity-20">
                       {Array.from({ length: 24 }).map((_, i) => (
@@ -211,7 +211,7 @@ export default function Hero() {
                     { label: 'Processing', value: '23ms', color: 'text-green-400' },
                     { label: 'Accuracy', value: '99.1%', color: 'text-accent-400' },
                   ].map((s) => (
-                    <div key={s.label} className="bg-white/5 rounded-lg p-2.5 text-center">
+                    <div key={s.label} className="bg-slate-200/50 dark:bg-white/5 rounded-lg p-2.5 text-center">
                       <div className={`font-mono font-bold text-sm ${s.color}`}>{s.value}</div>
                       <div className="text-slate-500 text-[10px] mt-0.5">{s.label}</div>
                     </div>
@@ -236,7 +236,7 @@ export default function Hero() {
       </div>
 
       {/* Bottom fade */}
-      <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-[#050d18] to-transparent" />
+      <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-slate-50 dark:from-[#050d18] to-transparent" />
 
       {/* Scroll indicator */}
       <div className="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 text-slate-500">

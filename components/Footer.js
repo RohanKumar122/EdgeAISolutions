@@ -113,7 +113,7 @@ export default function Footer() {
         {/* Bottom bar */}
         <div className="py-6 border-t border-white/5 flex flex-col sm:flex-row items-center justify-between gap-4">
           <p className="text-sm text-slate-600 text-center sm:text-left">
-            © {new Date().getFullYear()} Edge AI Local. All rights reserved. Made with ❤️ in Kanpur, India.
+            © {new Date().getFullYear()} Edge AI Local. All rights reserved.
           </p>
           <div className="flex items-center gap-4 text-xs text-slate-600">
             <a href="#" className="hover:text-slate-400 transition-colors">Privacy Policy</a>

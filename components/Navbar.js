@@ -41,7 +41,7 @@ export default function Navbar() {
           {/* Logo */}
           <Link href="/" className="flex items-center gap-2.5 group">
             <div className="relative">
-              <div className="w-10 h-10 rounded-lg bg-white/10 border border-brand-500/40 flex items-center justify-center group-hover:bg-brand-500/20 transition-colors overflow-hidden">
+              <div className="w-10 h-10 rounded-lg bg-slate-100 dark:bg-white/10 border border-brand-500/40 flex items-center justify-center hover:bg-slate-200 dark:hover:bg-brand-500/20 transition-colors overflow-hidden">
                 <img src="/EdgeAILocal.png" alt="Edge AI Local" className="w-full h-full object-contain" />
               </div>
               <div className="absolute -top-0.5 -right-0.5 w-2 h-2 bg-brand-400 rounded-full animate-pulse-slow" />
@@ -58,7 +58,7 @@ export default function Navbar() {
               <a
                 key={link.label}
                 href={link.href}
-                className="px-3 py-2 text-sm text-slate-300 hover:text-brand-400 font-medium transition-colors rounded-md hover:bg-brand-500/10"
+                className="px-3 py-2 text-sm text-slate-600 dark:text-slate-300 hover:text-brand-600 dark:hover:text-brand-400 font-medium transition-colors rounded-md hover:bg-brand-50/50 dark:hover:bg-brand-500/10"
               >
                 {link.label}
               </a>
@@ -69,7 +69,7 @@ export default function Navbar() {
           <div className="flex items-center gap-3">
             <button
               onClick={toggleDark}
-              className="p-2 rounded-lg text-slate-400 hover:text-brand-400 hover:bg-brand-500/10 transition-all"
+              className="p-2 rounded-lg text-slate-500 dark:text-slate-400 hover:text-brand-600 dark:hover:text-brand-400 hover:bg-slate-100 dark:hover:bg-brand-500/10 transition-all"
               aria-label="Toggle theme"
             >
               {darkMode ? <Sun className="w-4 h-4" /> : <Moon className="w-4 h-4" />}
@@ -82,7 +82,7 @@ export default function Navbar() {
             </a>
             <button
               onClick={() => setMenuOpen(!menuOpen)}
-              className="lg:hidden p-2 rounded-lg text-slate-300 hover:text-white hover:bg-white/10 transition-all"
+              className="lg:hidden p-2 rounded-lg text-slate-600 dark:text-slate-300 hover:text-slate-900 dark:hover:text-white hover:bg-slate-100 dark:hover:bg-white/10 transition-all"
             >
               {menuOpen ? <X className="w-5 h-5" /> : <Menu className="w-5 h-5" />}
             </button>
@@ -101,12 +101,12 @@ export default function Navbar() {
               key={link.label}
               href={link.href}
               onClick={() => setMenuOpen(false)}
-              className="block px-4 py-3 text-sm text-slate-300 hover:text-brand-400 hover:bg-brand-500/10 rounded-lg transition-all font-medium"
+              className="block px-4 py-3 text-sm text-slate-600 dark:text-slate-300 hover:text-brand-600 dark:hover:text-brand-400 hover:bg-slate-50 dark:hover:bg-brand-500/10 rounded-lg transition-all font-medium"
             >
               {link.label}
             </a>
           ))}
-          <div className="pt-2 border-t border-white/10">
+          <div className="pt-2 border-t border-slate-200 dark:border-white/10">
             <a href="#contact" className="btn-primary w-full text-center block text-sm">
               Get Started
             </a>

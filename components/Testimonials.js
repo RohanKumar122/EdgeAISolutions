@@ -66,7 +66,7 @@ const testimonials = [
 export default function Testimonials() {
   return (
     <section id="testimonials" className="relative py-28 overflow-hidden">
-      <div className="absolute inset-0 bg-gradient-to-b from-[#050d18] via-[#071020] to-[#050d18]" />
+      <div className="absolute inset-0 bg-gradient-to-b from-slate-50 via-slate-100 to-slate-50 dark:from-[#050d18] dark:via-[#071020] dark:to-[#050d18] transition-colors duration-300" />
       <div className="absolute top-1/4 right-0 w-96 h-96 bg-brand-500/5 rounded-full blur-3xl pointer-events-none" />
 
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">

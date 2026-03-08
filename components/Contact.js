@@ -19,7 +19,7 @@ export default function Contact() {
 
   return (
     <section id="contact" className="relative py-28 overflow-hidden">
-      <div className="absolute inset-0 bg-gradient-to-b from-[#071525] to-[#050d18]" />
+      <div className="absolute inset-0 bg-gradient-to-b from-slate-100 to-slate-50 dark:from-[#071525] dark:to-[#050d18] transition-colors duration-300" />
       <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-[600px] h-[300px] bg-brand-500/8 rounded-full blur-3xl pointer-events-none" />
 
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -47,26 +47,26 @@ export default function Contact() {
                 {
                   icon: Mail,
                   label: 'Email',
-                  value: process.env.NEXT_PUBLIC_CONTACT_EMAIL || 'contact@edgeailocal.in',
+                  value: process.env.NEXT_PUBLIC_CONTACT_EMAIL || 'contact@edgeailocal.com',
                   sub: 'We respond within 24 hours',
                   color: 'text-brand-600 dark:text-brand-400',
                   bg: 'bg-brand-500/10 dark:bg-brand-500/15',
                   border: 'border-brand-500/20 dark:border-brand-500/30',
                 },
-                {
-                  icon: Phone,
-                  label: 'Phone / WhatsApp',
-                  value: process.env.NEXT_PUBLIC_CONTACT_PHONE || '+91 98765 43210',
-                  sub: 'Mon–Sat, 9AM–7PM IST',
-                  color: 'text-emerald-600 dark:text-emerald-400',
-                  bg: 'bg-emerald-500/10 dark:bg-emerald-500/15',
-                  border: 'border-emerald-500/20 dark:border-emerald-500/30',
-                },
+                // {
+                //   icon: Phone,
+                //   label: 'Phone / WhatsApp',
+                //   value: process.env.NEXT_PUBLIC_CONTACT_PHONE || '+91 98765 43210',
+                //   sub: 'Mon–Sat, 9AM–7PM IST',
+                //   color: 'text-emerald-600 dark:text-emerald-400',
+                //   bg: 'bg-emerald-500/10 dark:bg-emerald-500/15',
+                //   border: 'border-emerald-500/20 dark:border-emerald-500/30',
+                // },
                 {
                   icon: MapPin,
                   label: 'Location',
-                  value: process.env.NEXT_PUBLIC_CONTACT_LOCATION || 'Kanpur, Uttar Pradesh',
-                  sub: `Installation service: ${process.env.NEXT_PUBLIC_SERVICE_AREAS || 'Kanpur, Lucknow, NCR'}`,
+                  value: process.env.NEXT_PUBLIC_CONTACT_LOCATION || 'Gurugram, Haryana',
+                  sub: `Installation service: ${process.env.NEXT_PUBLIC_SERVICE_AREAS || 'Gurugram, NCR'}`,
                   color: 'text-orange-600 dark:text-orange-400',
                   bg: 'bg-orange-500/10 dark:bg-orange-500/15',
                   border: 'border-orange-500/20 dark:border-orange-500/30',

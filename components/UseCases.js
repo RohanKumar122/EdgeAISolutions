@@ -60,7 +60,7 @@ const useCases = [
 export default function UseCases() {
   return (
     <section id="use-cases" className="relative py-28 overflow-hidden">
-      <div className="absolute inset-0 bg-gradient-to-b from-[#050d18] to-[#071525]" />
+      <div className="absolute inset-0 bg-gradient-to-b from-slate-50 to-slate-100 dark:from-[#050d18] dark:to-[#071525] transition-colors duration-300" />
       <div className="absolute left-1/2 -translate-x-1/2 top-0 w-px h-full bg-gradient-to-b from-transparent via-brand-500/10 to-transparent pointer-events-none" />
 
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -94,7 +94,7 @@ export default function UseCases() {
               <ul className="space-y-1.5">
                 {uc.features.map((f) => (
                   <li key={f} className="flex items-center gap-2 text-xs text-slate-700 dark:text-slate-300 transition-colors">
-                    <div className={`w-1 h-1 rounded-full ${uc.color.replace('text-', 'bg-')}`} />
+                    <div className={`w-1 h-1 rounded-full bg-current ${uc.color}`} />
                     {f}
                   </li>
                 ))}

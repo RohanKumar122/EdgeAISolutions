@@ -46,7 +46,7 @@ const steps = [
 export default function HowItWorks() {
   return (
     <section id="how-it-works" className="relative py-28 overflow-hidden">
-      <div className="absolute inset-0 bg-gradient-to-b from-[#071525] via-[#050d18] to-[#071525]" />
+      <div className="absolute inset-0 bg-gradient-to-b from-slate-100 via-slate-50 to-slate-100 dark:from-[#071525] dark:via-[#050d18] dark:to-[#071525] transition-colors duration-300" />
       <div className="absolute inset-0 bg-grid-pattern opacity-10" />
 
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -76,7 +76,7 @@ export default function HowItWorks() {
                 <div className="flex-1 group">
                   <div className={`glass neon-border rounded-2xl p-6 card-hover relative overflow-hidden`}>
                     {/* Number watermark */}
-                    <div className="absolute top-3 right-4 font-mono font-bold text-5xl text-white/5 select-none">
+                    <div className="absolute top-3 right-4 font-mono font-bold text-5xl text-slate-900/5 dark:text-white/5 select-none">
                       {step.number}
                     </div>
 
@@ -86,8 +86,8 @@ export default function HowItWorks() {
                     </div>
 
                     <div className={`font-mono text-xs ${step.color} mb-1 tracking-wider`}>{step.sublabel}</div>
-                    <h3 className="font-display font-bold text-lg text-white mb-2">{step.label}</h3>
-                    <p className="text-slate-400 text-sm leading-relaxed">{step.desc}</p>
+                    <h3 className="font-display font-bold text-lg text-slate-900 dark:text-white mb-2">{step.label}</h3>
+                    <p className="text-slate-600 dark:text-slate-400 text-sm leading-relaxed">{step.desc}</p>
 
                     {/* Bottom accent */}
                     <div className={`absolute bottom-0 left-0 right-0 h-0.5 ${step.bg}`} />
@@ -114,10 +114,10 @@ export default function HowItWorks() {
                   </div>
                   <div className="flex-1">
                     <div className={`font-mono text-xs ${step.color} mb-0.5 tracking-wider`}>{step.sublabel}</div>
-                    <h3 className="font-display font-semibold text-white mb-1">{step.label}</h3>
-                    <p className="text-slate-400 text-sm">{step.desc}</p>
+                    <h3 className="font-display font-semibold text-slate-900 dark:text-white mb-1">{step.label}</h3>
+                    <p className="text-slate-600 dark:text-slate-400 text-sm">{step.desc}</p>
                   </div>
-                  <div className="font-mono font-bold text-2xl text-white/10">{step.number}</div>
+                  <div className="font-mono font-bold text-2xl text-slate-900/10 dark:text-white/10">{step.number}</div>
                 </div>
                 {i < steps.length - 1 && (
                   <div className="flex justify-center my-2">

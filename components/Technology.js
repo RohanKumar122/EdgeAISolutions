@@ -90,7 +90,7 @@ const technologies = [
 export default function Technology() {
   return (
     <section id="technology" className="relative py-28 overflow-hidden">
-      <div className="absolute inset-0 bg-gradient-to-b from-[#050d18] to-[#071525]" />
+      <div className="absolute inset-0 bg-gradient-to-b from-slate-50 to-slate-100 dark:from-[#050d18] dark:to-[#071525] transition-colors duration-300" />
       <div className="absolute right-0 top-0 w-96 h-96 bg-accent-500/5 rounded-full blur-3xl" />
       <div className="absolute left-0 bottom-0 w-80 h-80 bg-brand-500/5 rounded-full blur-3xl" />
 

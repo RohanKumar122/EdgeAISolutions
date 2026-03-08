@@ -76,7 +76,7 @@ const plans = [
 export default function Pricing() {
   return (
     <section id="pricing" className="relative py-28 overflow-hidden">
-      <div className="absolute inset-0 bg-gradient-to-b from-[#071525] to-[#050d18]" />
+      <div className="absolute inset-0 bg-gradient-to-b from-slate-100 to-slate-50 dark:from-[#071525] dark:to-[#050d18] transition-colors duration-300" />
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[400px] bg-brand-500/5 rounded-full blur-3xl pointer-events-none" />
 
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -116,30 +116,30 @@ export default function Pricing() {
                 </div>
               )}
 
-              <div className={`p-6 border-b border-white/10 bg-gradient-to-br ${plan.highlighted ? 'from-brand-500/20' : 'from-white/5'} to-transparent`}>
+              <div className={`p-6 border-b border-slate-200 dark:border-white/10 bg-gradient-to-br ${plan.highlighted ? 'from-brand-500/10 dark:from-brand-500/20' : 'from-slate-100 dark:from-white/5'} to-transparent`}>
                 <div className={`w-11 h-11 ${plan.bg} border ${plan.border} rounded-xl flex items-center justify-center mb-4`}>
                   <plan.icon className={`w-5 h-5 ${plan.color}`} />
                 </div>
-                <h3 className="font-display font-bold text-xl text-white mb-1 tracking-tight">{plan.name}</h3>
+                <h3 className="font-display font-bold text-xl text-slate-900 dark:text-white mb-1 tracking-tight">{plan.name}</h3>
                 <div className="flex items-end gap-1 mb-2">
-                  <span className={`font-display font-bold text-4xl ${plan.highlighted ? 'text-brand-400' : 'text-white'}`}>
+                  <span className={`font-display font-bold text-4xl ${plan.highlighted ? 'text-brand-600 dark:text-brand-400' : 'text-slate-900 dark:text-white'}`}>
                     {plan.price}
                   </span>
                   <span className="text-slate-500 text-sm mb-1.5 ml-0.5">/ {plan.period}</span>
                 </div>
-                <p className="text-slate-400 text-sm leading-relaxed">{plan.desc}</p>
+                <p className="text-slate-600 dark:text-slate-400 text-sm leading-relaxed">{plan.desc}</p>
               </div>
 
               <div className="p-6 flex-1 space-y-2">
                 {plan.features.map((f) => (
-                  <div key={f} className="flex items-center gap-2.5 text-sm text-slate-300">
+                  <div key={f} className="flex items-center gap-2.5 text-sm text-slate-700 dark:text-slate-300">
                     <Check className="w-3.5 h-3.5 text-brand-400 flex-shrink-0" />
                     {f}
                   </div>
                 ))}
                 {plan.notIncluded.map((f) => (
-                  <div key={f} className="flex items-center gap-2.5 text-sm text-slate-600">
-                    <span className="w-3.5 h-3.5 flex items-center justify-center flex-shrink-0 text-slate-600 text-xs">—</span>
+                  <div key={f} className="flex items-center gap-2.5 text-sm text-slate-500">
+                    <span className="w-3.5 h-3.5 flex items-center justify-center flex-shrink-0 text-slate-500 text-xs">—</span>
                     {f}
                   </div>
                 ))}
@@ -150,7 +150,7 @@ export default function Pricing() {
                   href="#contact"
                   className={`w-full text-center block font-semibold py-3 rounded-xl transition-all duration-300 text-sm ${plan.highlighted
                     ? 'bg-brand-500 hover:bg-brand-400 text-white shadow-brand hover:shadow-brand-lg'
-                    : 'border border-white/20 text-slate-300 hover:bg-white/10 hover:border-white/30'
+                    : 'border border-slate-300 dark:border-white/20 text-slate-700 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-white/10 hover:border-slate-400 dark:hover:border-white/30'
                     }`}
                 >
                   {plan.price === 'Contact Us' ? 'Request Quote →' : 'Order Now →'}

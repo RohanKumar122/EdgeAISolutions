@@ -189,7 +189,7 @@ const products = [
 export default function Products() {
   return (
     <section id="products" className="relative py-28 overflow-hidden">
-      <div className="absolute inset-0 bg-gradient-to-b from-[#050d18] to-[#071525]" />
+      <div className="absolute inset-0 bg-gradient-to-b from-slate-50 to-slate-100 dark:from-[#050d18] dark:to-[#071525] transition-colors duration-300" />
       <div className="absolute left-0 top-1/3 w-96 h-96 bg-brand-500/5 rounded-full blur-3xl pointer-events-none" />
 
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">

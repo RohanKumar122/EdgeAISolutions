@@ -17,7 +17,7 @@ const cameras = [
 export default function Demo() {
   return (
     <section id="demo" className="relative py-28 overflow-hidden">
-      <div className="absolute inset-0 bg-gradient-to-b from-[#071525] to-[#050d18]" />
+      <div className="absolute inset-0 bg-gradient-to-b from-slate-100 to-slate-50 dark:from-[#071525] dark:to-[#050d18] transition-colors duration-300" />
       <div className="absolute inset-0 bg-grid-pattern opacity-10" />
 
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -28,11 +28,11 @@ export default function Demo() {
             <span className="font-mono text-xs text-brand-400 tracking-widest">DASHBOARD PREVIEW</span>
             <div className="h-px w-8 bg-brand-500" />
           </div>
-          <h2 className="font-display font-bold text-4xl sm:text-5xl text-white mb-4">
+          <h2 className="font-display font-bold text-4xl sm:text-5xl text-slate-900 dark:text-white mb-4">
             See It in{' '}
             <span className="gradient-text">Action</span>
           </h2>
-          <p className="text-slate-400 text-lg">
+          <p className="text-slate-600 dark:text-slate-400 text-lg">
             Every device ships with a local web dashboard — fully functional, beautiful, and 100% offline.
           </p>
         </div>
@@ -40,7 +40,7 @@ export default function Demo() {
         {/* Dashboard mockup */}
         <div className="glass neon-border rounded-3xl overflow-hidden">
           {/* Dashboard title bar */}
-          <div className="flex items-center justify-between px-5 py-3 border-b border-white/10 bg-white/5">
+          <div className="flex items-center justify-between px-5 py-3 border-b border-slate-200 dark:border-white/10 bg-slate-100 dark:bg-white/5">
             <div className="flex items-center gap-2">
               <div className="flex gap-1.5">
                 <div className="w-3 h-3 rounded-full bg-red-500/60" />
@@ -67,7 +67,7 @@ export default function Demo() {
                   { icon: Users, label: 'Attendance', value: '24', color: 'text-emerald-400', bg: 'bg-emerald-500/15' },
                   { icon: Shield, label: 'Threat Level', value: 'LOW', color: 'text-green-400', bg: 'bg-green-500/15' },
                 ].map((s) => (
-                  <div key={s.label} className={`${s.bg} rounded-xl p-3 border border-white/10`}>
+                  <div key={s.label} className={`${s.bg} rounded-xl p-3 border border-slate-200 dark:border-white/10`}>
                     <s.icon className={`w-4 h-4 ${s.color} mb-1`} />
                     <div className={`font-mono font-bold text-lg ${s.color}`}>{s.value}</div>
                     <div className="font-mono text-[9px] text-slate-500 uppercase">{s.label}</div>
@@ -83,7 +83,7 @@ export default function Demo() {
                 </div>
                 <div className="space-y-2">
                   {alerts.map((alert, i) => (
-                    <div key={i} className={`${alert.bg} border border-white/5 rounded-lg px-3 py-2.5 flex items-start gap-2`}>
+                    <div key={i} className={`${alert.bg} border border-slate-200 dark:border-white/5 rounded-lg px-3 py-2.5 flex items-start gap-2`}>
                       <div className={`w-1.5 h-1.5 rounded-full ${alert.dot} mt-1.5 flex-shrink-0`} />
                       <div className="flex-1 min-w-0">
                         <div className={`font-mono text-[9px] ${alert.color} mb-0.5`}>{alert.type}</div>
@@ -144,7 +144,7 @@ export default function Demo() {
               </div>
 
               {/* Analytics bar */}
-              <div className="bg-white/5 rounded-xl p-4 border border-white/5">
+              <div className="bg-slate-100 dark:bg-white/5 rounded-xl p-4 border border-slate-200 dark:border-white/5">
                 <div className="flex items-center justify-between mb-3">
                   <span className="font-mono text-xs text-slate-400">DETECTION ACTIVITY (24h)</span>
                   <span className="font-mono text-xs text-brand-400">47 events</span>
