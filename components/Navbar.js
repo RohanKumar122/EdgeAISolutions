@@ -41,13 +41,13 @@ export default function Navbar() {
           {/* Logo */}
           <Link href="/" className="flex items-center gap-2.5 group">
             <div className="relative">
-              <div className="w-9 h-9 rounded-lg bg-brand-500/20 border border-brand-500/40 flex items-center justify-center group-hover:bg-brand-500/30 transition-colors">
-                <Cpu className="w-5 h-5 text-brand-400" />
+              <div className="w-10 h-10 rounded-lg bg-white/10 border border-brand-500/40 flex items-center justify-center group-hover:bg-brand-500/20 transition-colors overflow-hidden">
+                <img src="/EdgeAILocal.png" alt="Edge AI Local" className="w-full h-full object-contain" />
               </div>
               <div className="absolute -top-0.5 -right-0.5 w-2 h-2 bg-brand-400 rounded-full animate-pulse-slow" />
             </div>
             <div className="flex flex-col leading-none">
-              <span className="font-display font-bold text-base text-slate-900 dark:text-white tracking-wide">Edge AI Local</span>
+              <span className="font-display font-bold text-base text-slate-900 dark:text-white tracking-wide">Edge <span className="text-transparent bg-clip-text bg-gradient-to-r from-green-500 to-blue-500">AI</span> Local</span>
               <span className="font-mono text-[9px] text-brand-600 dark:text-brand-400 tracking-[0.15em] uppercase">Security + Privacy</span>
             </div>
           </Link>
