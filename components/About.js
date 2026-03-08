@@ -58,7 +58,7 @@ export default function About() {
               <span className="gradient-text">Core.</span>
             </h2>
             <p className="text-slate-600 dark:text-slate-300 text-lg leading-relaxed">
-              RK Edge AI Solutions was founded on a simple belief: powerful AI should not require surrendering your privacy. We build hardware and software systems that bring cutting-edge artificial intelligence to homes, businesses, and institutions — without a single byte leaving your premises.
+              Edge AI Local was founded on a simple belief: powerful AI should not require surrendering your privacy. We build hardware and software systems that bring cutting-edge artificial intelligence to homes, businesses, and institutions — without a single byte leaving your premises.
             </p>
             <p className="text-slate-500 dark:text-slate-400 leading-relaxed">
               Powered by Raspberry Pi and optimized local AI models, our products deliver real-time person detection, face recognition, intelligent automation, and offline offline AI features at a fraction of cloud AI costs.
@@ -114,7 +114,7 @@ export default function About() {
                 <blockquote className="font-display font-bold text-2xl text-white leading-snug">
                   "Private AI. Secure Systems. Edge Intelligence."
                 </blockquote>
-                <div className="mt-3 text-slate-400 text-sm">— RK Edge AI Solutions</div>
+                <div className="mt-3 text-slate-400 text-sm">— Edge AI Local </div>
               </div>
             </div>
           </div>

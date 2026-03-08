@@ -1,8 +1,8 @@
-# RK Edge AI Solutions — Website
+# Edge AI Local — Website
 
 > **Private AI. Secure Systems. Edge Intelligence.**
 
-A modern, fully responsive Next.js landing page for RK Edge AI Solutions — a startup offering AI-powered edge computing and security products built on Raspberry Pi.
+A modern, fully responsive Next.js landing page for Edge AI Local — a startup offering AI-powered edge computing and security products built on Raspberry Pi.
 
 ---
 
@@ -26,7 +26,7 @@ npm start
 ## 📁 Project Structure
 
 ```
-rk-edge-ai-solutions/
+edge-ai-local-solutions/
 ├── components/
 │   ├── Navbar.js          # Sticky header with mobile menu + dark/light toggle
 │   ├── Hero.js            # Animated hero with particle canvas + live AI demo card
@@ -122,5 +122,5 @@ Toggle via the sun/moon button in the navbar. The site defaults to dark mode. Li
 
 ## 📄 License
 
-© 2025 RK Edge AI Solutions. All Rights Reserved.
+© 2025 Edge AI Local. All Rights Reserved.
 # EdgeAISolutions

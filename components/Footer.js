@@ -51,8 +51,8 @@ export default function Footer() {
                 <Cpu className="w-5 h-5 text-brand-600 dark:text-brand-400" />
               </div>
               <div className="flex flex-col leading-none">
-                <span className="font-display font-bold text-base text-slate-900 dark:text-white tracking-wide">RK Edge AI</span>
-                <span className="font-mono text-[9px] text-brand-600 dark:text-brand-400 tracking-[0.15em] uppercase">Solutions</span>
+                <span className="font-display font-bold text-base text-slate-900 dark:text-white tracking-wide">Edge AI Local</span>
+                <span className="font-mono text-[9px] text-brand-600 dark:text-brand-400 tracking-[0.15em] uppercase">Security + Privacy</span>
               </div>
             </div>
 
@@ -63,7 +63,7 @@ export default function Footer() {
             <div className="space-y-2 text-sm">
               <div className="flex items-center gap-2 text-slate-600 dark:text-slate-400">
                 <Mail className="w-3.5 h-3.5 text-brand-600/60 dark:text-brand-500/60" />
-                {process.env.NEXT_PUBLIC_CONTACT_EMAIL || 'contact@rkedgeai.in'}
+                {process.env.NEXT_PUBLIC_CONTACT_EMAIL || 'contact@edgeailocal.in'}
               </div>
               <div className="flex items-center gap-2 text-slate-600 dark:text-slate-400">
                 <Phone className="w-3.5 h-3.5 text-brand-600/60 dark:text-brand-500/60" />
@@ -113,7 +113,7 @@ export default function Footer() {
         {/* Bottom bar */}
         <div className="py-6 border-t border-white/5 flex flex-col sm:flex-row items-center justify-between gap-4">
           <p className="text-sm text-slate-600 text-center sm:text-left">
-            © {new Date().getFullYear()} RK Edge AI Solutions. All rights reserved. Made with ❤️ in Kanpur, India.
+            © {new Date().getFullYear()} Edge AI Local. All rights reserved. Made with ❤️ in Kanpur, India.
           </p>
           <div className="flex items-center gap-4 text-xs text-slate-600">
             <a href="#" className="hover:text-slate-400 transition-colors">Privacy Policy</a>

@@ -32,8 +32,8 @@ export default function Navbar() {
   return (
     <header
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${scrolled
-          ? 'glass border-b border-brand-500/10 py-3'
-          : 'bg-transparent py-5'
+        ? 'glass border-b border-brand-500/10 py-3'
+        : 'bg-transparent py-5'
         }`}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -47,8 +47,8 @@ export default function Navbar() {
               <div className="absolute -top-0.5 -right-0.5 w-2 h-2 bg-brand-400 rounded-full animate-pulse-slow" />
             </div>
             <div className="flex flex-col leading-none">
-              <span className="font-display font-bold text-base text-slate-900 dark:text-white tracking-wide">RK Edge AI</span>
-              <span className="font-mono text-[9px] text-brand-600 dark:text-brand-400 tracking-[0.15em] uppercase">Solutions</span>
+              <span className="font-display font-bold text-base text-slate-900 dark:text-white tracking-wide">Edge AI Local</span>
+              <span className="font-mono text-[9px] text-brand-600 dark:text-brand-400 tracking-[0.15em] uppercase">Security + Privacy</span>
             </div>
           </Link>
 

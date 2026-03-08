@@ -17,15 +17,15 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>RK Edge AI Solutions — Private AI. Secure Systems. Edge Intelligence.</title>
+        <title>Edge AI Local — Private AI. Secure Systems. Edge Intelligence.</title>
         <meta name="description" content="AI-powered edge computing and security products built on Raspberry Pi. 100% offline AI for homes, businesses, and institutions. Face recognition, smart cameras, local LLM — no cloud required." />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="robots" content="index, follow" />
-        <meta property="og:title" content="RK Edge AI Solutions" />
+        <meta property="og:title" content="Edge AI Local" />
         <meta property="og:description" content="Private AI. Secure Systems. Edge Intelligence. AI security that never leaves your premises." />
         <meta property="og:type" content="website" />
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="RK Edge AI Solutions" />
+        <meta name="twitter:title" content="Edge AI Local" />
         <meta name="twitter:description" content="100% offline AI security systems built on Raspberry Pi." />
       </Head>
 

@@ -47,7 +47,7 @@ export default function Contact() {
                 {
                   icon: Mail,
                   label: 'Email',
-                  value: process.env.NEXT_PUBLIC_CONTACT_EMAIL || 'contact@rkedgeai.in',
+                  value: process.env.NEXT_PUBLIC_CONTACT_EMAIL || 'contact@edgeailocal.in',
                   sub: 'We respond within 24 hours',
                   color: 'text-brand-600 dark:text-brand-400',
                   bg: 'bg-brand-500/10 dark:bg-brand-500/15',

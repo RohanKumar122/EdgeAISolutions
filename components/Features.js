@@ -136,7 +136,7 @@ export default function Features() {
             <div className="p-8 bg-gradient-to-br from-brand-500/10 to-transparent">
               <div className="flex items-center gap-2 mb-5">
                 <div className="w-3 h-3 bg-brand-400 rounded-full animate-pulse" />
-                <span className="font-mono text-sm text-brand-400">RK Edge AI</span>
+                <span className="font-mono text-sm text-brand-400">Edge AI Local</span>
               </div>
               <ul className="space-y-3">
                 {[

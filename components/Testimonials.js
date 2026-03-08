@@ -28,7 +28,7 @@ const testimonials = [
     avatar: 'RG',
     avatarColor: 'from-emerald-500 to-emerald-600',
     stars: 5,
-    text: 'I was spending ₹4,000 per month on cloud CCTV service and the cameras went offline every time the internet dropped. With RK Edge AI, I paid once and the system has run 24/7 for 5 months straight without a single issue.',
+    text: 'I was spending ₹4,000 per month on cloud CCTV service and the cameras went offline every time the internet dropped. With Edge AI Local, I paid once and the system has run 24/7 for 5 months straight without a single issue.',
     product: 'Smart Security Camera',
   },
   {
@@ -58,7 +58,7 @@ const testimonials = [
     avatar: 'VS',
     avatarColor: 'from-teal-500 to-teal-600',
     stars: 5,
-    text: 'We evaluated 5 solutions. RK Edge AI was the only one that genuinely works offline, has open-source models, and doesn\'t require any cloud login. The local dashboard is clean and our security team loves it.',
+    text: 'We evaluated 5 solutions. Edge AI Local was the only one that genuinely works offline, has open-source models, and doesn\'t require any cloud login. The local dashboard is clean and our security team loves it.',
     product: 'Professional System',
   },
 ]

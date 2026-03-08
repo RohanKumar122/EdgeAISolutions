@@ -47,7 +47,7 @@ export default function Demo() {
                 <div className="w-3 h-3 rounded-full bg-yellow-500/60" />
                 <div className="w-3 h-3 rounded-full bg-green-500/60" />
               </div>
-              <span className="font-mono text-xs text-slate-400 ml-2">RK Edge AI — Local Dashboard — 192.168.1.100</span>
+              <span className="font-mono text-xs text-slate-400 ml-2">Edge AI Local — Local Dashboard — 192.168.1.100</span>
             </div>
             <div className="flex items-center gap-2">
               <div className="w-2 h-2 bg-green-400 rounded-full animate-pulse" />
