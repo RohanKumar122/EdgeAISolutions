@@ -63,15 +63,15 @@ export default function Footer() {
             <div className="space-y-2 text-sm">
               <div className="flex items-center gap-2 text-slate-600 dark:text-slate-400">
                 <Mail className="w-3.5 h-3.5 text-brand-600/60 dark:text-brand-500/60" />
-                {process.env.NEXT_PUBLIC_CONTACT_EMAIL || 'contact@edgeailocal.in'}
+                {process.env.NEXT_PUBLIC_CONTACT_EMAIL || 'contact@edgeailocal.com'}
               </div>
-              <div className="flex items-center gap-2 text-slate-600 dark:text-slate-400">
+              {/* <div className="flex items-center gap-2 text-slate-600 dark:text-slate-400">
                 <Phone className="w-3.5 h-3.5 text-brand-600/60 dark:text-brand-500/60" />
                 {process.env.NEXT_PUBLIC_CONTACT_PHONE || '+91 98765 43210'}
-              </div>
+              </div> */}
               <div className="flex items-center gap-2 text-slate-600 dark:text-slate-400">
                 <MapPin className="w-3.5 h-3.5 text-brand-600/60 dark:text-brand-500/60" />
-                {process.env.NEXT_PUBLIC_CONTACT_LOCATION_FULL || 'Kanpur, Uttar Pradesh, India'}
+                {process.env.NEXT_PUBLIC_CONTACT_LOCATION_FULL || 'Gurugram, Haryana, India'}
               </div>
             </div>
 

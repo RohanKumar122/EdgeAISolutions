@@ -66,7 +66,7 @@ export default function Contact() {
                   icon: MapPin,
                   label: 'Location',
                   value: process.env.NEXT_PUBLIC_CONTACT_LOCATION || 'Gurugram, Haryana',
-                  sub: `Installation service: ${process.env.NEXT_PUBLIC_SERVICE_AREAS || 'Gurugram, NCR'}`,
+                  // sub: `Installation service: ${process.env.NEXT_PUBLIC_SERVICE_AREAS || 'Gurugram, NCR'}`,
                   color: 'text-orange-600 dark:text-orange-400',
                   bg: 'bg-orange-500/10 dark:bg-orange-500/15',
                   border: 'border-orange-500/20 dark:border-orange-500/30',
